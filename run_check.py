@@ -35,7 +35,7 @@ def run_checker(config_file="products.yaml",notif_file="notifications.yaml"):
             print(f"Skipping {name}, listing date is in the future: {product_date}")
             continue
         if notifications["notifications"] and name in notifications["notifications"]:
-            if notifications["notifications"][name] >= today:
+            if notifications["notifications"][name] <= today:
                 print(f"Already notified for {name}.")
                 continue
         updated = False
