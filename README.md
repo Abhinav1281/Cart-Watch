@@ -1,6 +1,25 @@
 # Cart-Watch
 CartWatch is a lightweight Python app that tracks product availability on Amazon, Flipkart, Myntra, and Meesho. Configure URLs and check types, in YAML, and receive email alerts when items are in stock. Efficient, configurable, and prevents duplicate notifications.
 
+## Running CartWatch
+
+1. **Install dependencies**  
+    Ensure you have Python 3.8+ installed. Install required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. **Prepare configuration files**  
+    Create `products.yaml` and `email_config.yaml` in the project directory using the formats shown below.
+
+3. **Run the application**  
+    Execute the main script:
+    ```bash
+    python cartwatch.py
+    ```
+
+4. **Monitor logs and alerts**  
+    Check the console output for status updates. Email alerts will be sent when products are in stock.
 
 ## YAML Configuration Formats
 
